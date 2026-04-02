@@ -52,4 +52,44 @@ Return ONLY JSON.
 
   return completion.choices[0].message.content;
 
+}   
+
+export async function askAICofounder(message: string) {
+
+  const completion = await groq.chat.completions.create({
+
+    model: "llama-3.3-70b-versatile",
+
+    messages: [
+      {
+        role: "system",
+        content: `
+You are LaunchLens AI Cofounder.
+
+You help startup founders with:
+
+• validating startup ideas
+• marketing strategies
+• pricing models
+• building MVP
+• finding first customers
+• competitor analysis
+
+Give short practical advice in 3-5 sentences.
+`
+      },
+
+      {
+        role: "user",
+        content: message
+      }
+
+    ],
+
+    temperature: 0.6,
+    max_tokens: 500
+
+  });
+
+  return completion.choices[0].message.content;
 }

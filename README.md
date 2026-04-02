@@ -203,4 +203,4 @@ Divyansh
 
 # License
 
-This project was developed for hackathon and educational purposes.
+This project was developed for hackathon and educational purposes

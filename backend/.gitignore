@@ -1,0 +1,21 @@
+# Node
+node_modules/
+dist/
+
+# Environment
+.env
+
+# Firebase Service Account
+serviceAccountKey.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+# Other
+ServiceAccountKey.json.json
+ServiceAccountKey.json
